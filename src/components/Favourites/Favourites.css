@@ -1,0 +1,28 @@
+.favourites-list {
+  list-style-type: none;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 40vh;
+  width: 80vw;
+}
+.favourites-list::-webkit-scrollbar {
+  display: none;
+}
+
+.favourites-list li {
+  width: 45%;
+  position: relative;
+  transition: transform 0.1s;
+}
+
+.favourites-list li:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.75rem rgb(28, 28, 28));
+}
+
+@media only screen and (min-width: 992px) {
+  .favourites-list {
+    height: 60vh;
+    width: 45vw;
+  }
+}

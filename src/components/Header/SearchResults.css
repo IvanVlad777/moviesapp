@@ -1,0 +1,29 @@
+.search-bar {
+  z-index: 3;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 60vh;
+  width: 60vw;
+}
+.search-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.search-item {
+  width: 12rem;
+  position: relative;
+  transition: transform 0.1s;
+}
+
+.search-item:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.75rem rgb(212, 182, 13));
+}
+
+.search-item > img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  user-select: none;
+}

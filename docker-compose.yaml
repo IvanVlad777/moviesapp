@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  moviesapp:
+    build: ./moviesapp
+    container_name: moviesapp_container
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
